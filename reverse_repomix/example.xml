@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <metadata>
+    <name>Пример проекта</name>
+    <description>Демонстрационный проект для тестирования reverse_repomix</description>
+    <created>2023-06-25T15:30:45Z</created>
+    <format_version>1.0</format_version>
+  </metadata>
+  
+  <files>
+    <!-- Текстовый файл в корне проекта -->
+    <file path="README.md" type="text/markdown" size="185" encoding="utf-8" binary="false">
+      # Пример проекта
+      
+      Этот проект создан для демонстрации работы reverse_repomix.
+      
+      ## Использование
+      
+      1. Распакуйте XML файл
+      2. Изучите структуру
+    </file>
+    
+    <!-- Бинарный файл в base64 -->
+    <file path="images/logo.png" type="image/png" size="1024" encoding="base64" binary="true" mode="644">
+      iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==
+    </file>
+    
+    <!-- Python скрипт -->
+    <file path="src/main.py" type="text/x-python" size="156" encoding="utf-8" binary="false" mode="755">
+#!/usr/bin/env python3
+
+def main():
+    print("Привет, мир!")
+    print("Это тестовый Python скрипт")
+    
+if __name__ == "__main__":
+    main()
+    </file>
+    
+    <!-- HTML файл -->
+    <file path="web/index.html" type="text/html" size="325" encoding="utf-8" binary="false">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Тестовая страница&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Тестовая страница&lt;/h1&gt;
+    &lt;p&gt;Это пример HTML документа.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </file>
+    
+    <!-- CSS файл -->
+    <file path="web/style.css" type="text/css" size="112" encoding="utf-8" binary="false">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+    </file>
+    
+    <!-- JSON файл конфигурации -->
+    <file path="config/settings.json" type="application/json" size="152" encoding="utf-8" binary="false">
+{
+  "name": "example-project",
+  "version": "1.0.0",
+  "debug": true,
+  "database": {
+    "host": "localhost",
+    "port": 5432
+  }
+}
+    </file>
+  </files>
+</project> 
